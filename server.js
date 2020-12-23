@@ -1,13 +1,11 @@
 const express = require('express');
-const Config = require('./config');
+const config = require('./config/index');
 const routes = require('./src/routes/index')
-const config = Config.getConfig();
 
 async function startServer() {
     const app = express();
 
-
-    app.listen(config.port, () => {});
+    app.listen(config().port, () => {});
     app.use('/' ,routes(app));
 }
 

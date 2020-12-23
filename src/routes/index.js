@@ -1,10 +1,10 @@
 const hello = require('./hello');
+const customers = require('./customers');
 
-const routes = (app) => {
+module.exports = app => {
+
     hello(app);
+    customers(app);
 
     return app;
 };
-
-
-module.exports = routes;

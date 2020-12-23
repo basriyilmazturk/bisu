@@ -1,7 +1,6 @@
-const hello = (app) => {
+module.exports = app => {
+
     app.get('/', (req, res) => {
-        res.status(200).send("Helslo World\n").end();
+        res.status(200).send("Hello World\n").end();
     });
 };
-
-module.exports = hello;
