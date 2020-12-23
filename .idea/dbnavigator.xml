@@ -35,7 +35,7 @@
     <connection id="f51ac07b-b32e-449d-9e4f-97dc86960d86">
       <console name="Bisu Test" type="STANDARD" schema="bisu" session="Main"><![CDATA[CREATE DATABASE IF NOT EXISTS bisu;
 
-create table Subscription (
+create table `Subscription` (
 id int(6) unsigned auto_increment primary key,
 fullname varchar(30) not null,
 address text not null,
@@ -47,12 +47,28 @@ phone_number varchar(20) not null,
 distributor_number int(10) not null
 );
 
-insert into Subscription (fullname, address, location_name, sub_city_name, city_name, brand, phone_number, distributor_number) values 
+create table `Order` (
+id int(10) unsigned auto_increment primary key,
+subscription_id int(6) unsigned not null,
+delivery_date date not null,
+payment_method varchar(30) not null,
+products json not null,
+total_amount double(7,2) not null,
+status varchar(30) not null
+);
+
+alter table `Order` add key `subscription_id` (`subscription_id`);
+
+alter table `Order` add constraint foreign key (`subscription_id`) REFERENCES `Subscription` (`id`);
+
+insert into `Subscription` (fullname, address, location_name, sub_city_name, city_name, brand, phone_number, distributor_number) values 
 ('Utku Yaman', 'sair nefi sokak', 'caferaga', 'kadikoy', 'istanbul', 'hayat', '5332858530', 12312354),
 ('Utku Yaman', 'sair nefi sokak', 'caferaga', 'kadikoy', 'istanbul', 'sirma', '5332858530', 12312355),
 ('Basri Yilmazturk', 'feyza sokak', 'fevzi cakmak', 'pendik', 'istanbul', 'erikli', '5384165188', 12312357),
 ('Ahmet Necdet Sezer', 'cankaya', 'cankaya', 'cankaya', 'ankara', 'hamidiye', '5325320000', 12312359);
 
+insert into `Order` (subscription_id, delivery_date, payment_method, products, total_amount, status) values
+(1, '2017-05-02 00:23', 'asd', '[{"product":"19 lt damanaca", "quantity":1 }]', 10.00, 'New');
 
 
 use bisu;

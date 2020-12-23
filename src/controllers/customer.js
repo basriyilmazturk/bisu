@@ -1,7 +1,5 @@
 const Customer = require("../models/customer.js");
 
-
-// Retrieve all Customers from the database.
 exports.findSubscribtionsByPhone = (req, res) => {
 
     Customer.findByPhone(req.params.phone, (err, data) => {
@@ -28,6 +26,13 @@ exports.findSubscribtionsByPhone = (req, res) => {
 exports.findSubscriptionOrders = (req, res) => {
 
     Customer.findOrders(req.params.subId, (err, data) => {
+        if (err) {
+            res.status(500).send({
+                message: "Sunucu hatası. Lütfen tekrar deneyin."
+            });
+            return;
+        }
 
+        res.send(data);
     });
 };
