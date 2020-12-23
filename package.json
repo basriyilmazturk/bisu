@@ -1,0 +1,10 @@
+{
+  "name": "bisu",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "helmet": "^4.2.0"
+  }
+}

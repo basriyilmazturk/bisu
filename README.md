@@ -1,2 +1,3 @@
-# bisu
-bisu case study
+# Bisu
+Bisu case study
+
