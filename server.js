@@ -1,6 +1,6 @@
 const express = require('express');
 const config = require('./config/index');
-const routes = require('./src/routes/index')
+const routes = require('./src/routes/index');
 
 async function startServer() {
     const app = express();

@@ -33,6 +33,14 @@ exports.findSubscriptionOrders = (req, res) => {
             return;
         }
 
+        if (data.length == 0) {
+            res.status(403).send({
+                message: "Belirtilen uyelige ait siparis bulunamamıştır."
+            });
+
+            return;
+        }
+
         res.send(data);
     });
 };
