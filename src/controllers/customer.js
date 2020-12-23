@@ -1,9 +1,12 @@
 const Customer = require("../models/customer.js");
 
+/**
+ * Finds all subscriptions with given phone number
+ * @param req http request
+ * @param res http response
+ */
 exports.findSubscribtionsByPhone = (req, res) => {
-
     Customer.findByPhone(req.params.phone, (err, data) => {
-        console.log(err, data);
         if (err) {
             res.status(500).send({
                 message: "Sunucu hatası. Lütfen tekrar deneyin."

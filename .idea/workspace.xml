@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d27e939c-0485-452b-a7c7-585584b9b21a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/customer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/customer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/customer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/customer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/customer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/customer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/hello.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/hello.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +55,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -67,6 +74,7 @@
       <workItem from="1608681352225" duration="5958000" />
       <workItem from="1608733721541" duration="1347000" />
       <workItem from="1608736106903" duration="8818000" />
+      <workItem from="1608753534099" duration="680000" />
     </task>
     <servers />
   </component>
